@@ -16,4 +16,13 @@ export class AppComponent {
   \\end{array}
   \\right).
   $$`;
+
+
+  data3="x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}";
+
+  updateFormula(event){
+    this.data3 = '$$'.concat(event.target.value.toString().replace(/\\/g,'\\\\')).concat('$$');
+  }
+
+  
 }

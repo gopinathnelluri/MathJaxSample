@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import {MathJaxModule} from 'ngx-mathjax';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import {MathJaxModule} from 'ngx-mathjax';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     MathJaxModule.config({
       version: '2.7.5',
       config: 'TeX-AMS_HTML',

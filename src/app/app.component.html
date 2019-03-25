@@ -8,3 +8,17 @@
 <div mathjax [innerHTML]="data1"></div>
 <div mathjax [innerHTML]="data2"></div>
 github: <a href="https://github.com/gopinathnelluri/MathJaxSample/" target="_blank">https://github.com/gopinathnelluri/MathJaxSample/</a>
+<br/>
+
+
+<!--
+  <input [(ngModel)]="data1"><br/>
+<div [mathjax]="data1"></div>
+<input (keyup)="updateFormula($event)">
+-->
+<br/><br/><br/><br/>
+Edit formula:<br/>
+<textarea style="width:98%;height:40px;" [(ngModel)]="data3"></textarea><br/>
+<div #jax [mathjax]="[data3]">
+  <div> Sample Dynamic Exp: $$ {{ '{}' }} $$</div>
+</div>
