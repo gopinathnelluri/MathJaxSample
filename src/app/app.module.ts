@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import {MathJaxModule} from 'ngx-mathjax';
+import { MathJaxModule } from './math-jax/math-jax.module';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({

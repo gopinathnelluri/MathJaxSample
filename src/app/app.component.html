@@ -5,11 +5,12 @@
   </h1>
 </div>
 <h2>MathJax Example</h2>
-<div mathjax [innerHTML]="data1"></div>
+<div mathjaxnew [innerHTML]="data1"></div>
 <div mathjax [innerHTML]="data2"></div>
 github: <a href="https://github.com/gopinathnelluri/MathJaxSample/" target="_blank">https://github.com/gopinathnelluri/MathJaxSample/</a>
 <br/>
 
+<textarea style="width:98%;height:40px;" [(ngModel)]="data1"></textarea><br/>
 
 <!--
   <input [(ngModel)]="data1"><br/>
@@ -18,7 +19,18 @@ github: <a href="https://github.com/gopinathnelluri/MathJaxSample/" target="_bla
 -->
 <br/><br/><br/><br/>
 Edit formula:<br/>
+
 <textarea style="width:98%;height:40px;" [(ngModel)]="data3"></textarea><br/>
-<div #jax [mathjax]="[data3]">
-  <div> Sample Dynamic Exp: $$ {{ '{}' }} $$</div>
+
+
+<div [mathjaxnew]="[data3]">
+  <div [innerHTML]="data3"></div>
 </div>
+
+
+<textarea style="width:98%;height:40px;" [(ngModel)]="data2"></textarea><br/>
+<div #jax[1] [mathjaxnew]="[data2]">
+  <div> Sample Dynamic Exp:  $$ {{ '{}' }} $$</div>
+</div>
+
+
