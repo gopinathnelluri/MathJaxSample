@@ -11,8 +11,10 @@
     <textarea style="width:98%;height: calc( 100vh - 140px);" [(ngModel)]="data"></textarea><br />
   </div>
   <div style="width: 50%; float:left;">
-    <h2>Preview:</h2>
-    <div [mathJaxData]="data">
+    <div style="padding-left: 10px;padding-right:10px;">
+      <h2>Preview:</h2>
+      <div [mathJaxData]="data">
+      </div>
     </div>
   </div>
 </div>

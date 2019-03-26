@@ -50,8 +50,7 @@ export class MathJaxNewDirective implements AfterViewInit, OnChanges, OnDestroy 
         map(updateValue => ({updateValue, jax}))))
     ).subscribe(({updateValue, jax}) =>
       updateValue.forEach(v => {
-        console.log("check1",v, this._el);
-        //MathJax.Hub.Queue(['Text', jax[v.order], v.value])
+        console.log('check1',v, this._el);
         MathJax.Hub.Queue(['Typeset', MathJax.Hub, this._el.children[0]]);
       }
     ));
