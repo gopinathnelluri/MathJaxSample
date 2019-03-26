@@ -8,6 +8,7 @@ import {MathJaxDirective} from './math-jax.directive';
 import {MathJaxService} from './math-jax.service';
 import { MathJaxNewDirective } from './math-jax-new.directive';
 import { MathJaxNew2Directive } from './math-jax-new2.directive';
+import { MathJaxDataDirective } from './math-jax-data.directive';
 
 
 /**
@@ -52,11 +53,11 @@ export class ModuleConfiguration {
  * })
  */
 @NgModule({
-  declarations: [MathJaxDirective, MathJaxNewDirective, MathJaxNew2Directive],
+  declarations: [MathJaxDirective, MathJaxNewDirective, MathJaxNew2Directive, MathJaxDataDirective],
   imports: [
     CommonModule
   ],
-  exports: [MathJaxDirective, MathJaxNewDirective, MathJaxNew2Directive]
+  exports: [MathJaxDirective, MathJaxNewDirective, MathJaxNew2Directive, MathJaxDataDirective]
 })
 export class MathJaxModule {
 

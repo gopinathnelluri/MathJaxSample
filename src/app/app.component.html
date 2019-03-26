@@ -4,33 +4,15 @@
     Welcome to {{ title }}!
   </h1>
 </div>
-<h2>MathJax Example</h2>
-<div mathjaxnew [innerHTML]="data1"></div>
-<div mathjax [innerHTML]="data2"></div>
-github: <a href="https://github.com/gopinathnelluri/MathJaxSample/" target="_blank">https://github.com/gopinathnelluri/MathJaxSample/</a>
-<br/>
 
-<textarea style="width:98%;height:40px;" [(ngModel)]="data1"></textarea><br/>
-
-<!--
-  <input [(ngModel)]="data1"><br/>
-<div [mathjax]="data1"></div>
-<input (keyup)="updateFormula($event)">
--->
-<br/><br/><br/><br/>
-Edit formula:<br/>
-
-<textarea style="width:98%;height:40px;" [(ngModel)]="data3"></textarea><br/>
-
-
-<div [mathjaxnew2]="[data3]">
+<div style="width: 100%;">
+  <div style="width: 50%; float:left;">
+    <h2>Editor:</h2>
+    <textarea style="width:98%;height: calc( 100vh - 140px);" [(ngModel)]="data"></textarea><br />
+  </div>
+  <div style="width: 50%; float:left;">
+    <h2>Preview:</h2>
+    <div [mathJaxData]="data">
+    </div>
+  </div>
 </div>
-
-<!--
-<textarea style="width:98%;height:40px;" [(ngModel)]="data2"></textarea><br/>
-<div #jax[1] [mathjaxnew]="[data2]">
-  <div> Sample Dynamic Exp:  $$ {{ '{}' }} $$</div>
-</div>
--->
-
-
