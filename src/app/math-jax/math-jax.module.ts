@@ -7,6 +7,7 @@ import {CommonModule} from '@angular/common';
 import {MathJaxDirective} from './math-jax.directive';
 import {MathJaxService} from './math-jax.service';
 import { MathJaxNewDirective } from './math-jax-new.directive';
+import { MathJaxNew2Directive } from './math-jax-new2.directive';
 
 
 /**
@@ -51,11 +52,11 @@ export class ModuleConfiguration {
  * })
  */
 @NgModule({
-  declarations: [MathJaxDirective, MathJaxNewDirective],
+  declarations: [MathJaxDirective, MathJaxNewDirective, MathJaxNew2Directive],
   imports: [
     CommonModule
   ],
-  exports: [MathJaxDirective, MathJaxNewDirective]
+  exports: [MathJaxDirective, MathJaxNewDirective, MathJaxNew2Directive]
 })
 export class MathJaxModule {
 
